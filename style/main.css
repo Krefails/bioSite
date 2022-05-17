@@ -1,146 +1,262 @@
+#react-root, article, div, footer, header, main, nav, section {
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	border: 0 solid #000;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
 body {
 	margin: 0;
 	font-family: Oswald, Helvetica, sans-serif;
 }
 
 header {
-    
 	background-color: #005555;
-	color: #A1E3D8;
+	color: #a1e3d8;
 	padding: 20px;
-    text-align: center;
+	text-align: center;
 }
 
 h1 {
-    font-weight: 400;
+	font-weight: 400;
 }
 
 nav {
-    position: sticky;
-    top: 0px;
-    overflow: hidden;
-    background-color: #005555;
-    border-bottom: solid 15px #F7FF93;
-    display: block;
-    
+	position: sticky;
+	top: 0px;
+	overflow: hidden;
+	background-color: #005555;
+	border-bottom: solid 15px #f7ff93;
+	display: block;
+    z-index: 1;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: #A1E3D8;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	float: left;
+	display: block;
+	color: #a1e3d8;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #F7FF93;
-    color: #005555;
+	background-color: #f7ff93;
+	color: #005555;
 }
 
 main {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 10px;
 }
 
 #container {
-    position: relative;
-    top: 25vh;
+	position: relative;
+	top: 25vh;
 }
 
 #home-text {
-    width: 40vw;
-    display: block;
-    margin: auto;
-    text-align: center;
+	width: 40vw;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
 
 #gate {
-    z-index: -1;
-    position: absolute;
-    left: 4vw;
-    top: -31vh;
-    display: block;
-    margin: auto;
-    width: 80vw;
-    height: 80vh;
+	z-index: -1;
+	position: absolute;
+	left: 4vw;
+	top: -31vh;
+	display: block;
+	margin: auto;
+	width: 80vw;
+	height: 80vh;
 }
 
 .home-btns {
-    margin: auto;
-    width: 40vw;
-    display: grid;
-    grid-template-columns: auto auto;
+	margin: auto;
+	width: 40vw;
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 .button {
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 100px;
-    border: solid 2px rgb(95, 95, 95);
-    transition: 0.3ms;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-    border-radius: 10%;
-    margin: auto;
-    padding: 10px;
-    background-color: #069A8E;
-    color: black;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	border: solid 2px rgb(95, 95, 95);
+	transition: 0.3ms;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+	border-radius: 10%;
+	margin: auto;
+	padding: 10px;
+	background-color: #069a8e;
+	color: black;
 }
 
 .button:hover {
-    background-color: #F7FF93;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
-    color: black;
+	background-color: #f7ff93;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+	color: black;
 }
 
 .button:active {
-    box-shadow: inset 0px 0px 8px 0px rgb(37, 37, 37);
+	box-shadow: inset 0px 0px 8px 0px rgb(37, 37, 37);
 }
 
 footer {
-    background-color: #005555;
-    position: static;
-    display: block;
-    bottom: 0px;
-    width: 100%;
-    bottom: 0px;
-    height: 5vh;
-    margin-top: 15vh;
+	background-color: #005555;
+	position: static;
+	display: block;
+	bottom: 0px;
+	width: 100%;
+	bottom: 0px;
+	height: 5vh;
+	margin-top: 15vh;
 }
 
 footer p {
-    color: #A1E3D8;
-    font-weight: 400;
-    float: right;
-    padding-right: 10px;
-    font-style: italic;
-    font-size: .75em;
+	color: #a1e3d8;
+	font-weight: 400;
+	float: right;
+	padding-right: 10px;
+	font-style: italic;
+	font-size: 0.75em;
 }
 
 footer a {
-    text-decoration: none;
-    color: #A1E3D8;
+	text-decoration: none;
+	color: #a1e3d8;
 }
 
 footer a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* ABOUT PAGE */
 
 #aboutImg {
-    float: left;
-    margin: 30px;
-
+	float: left;
+	margin: 30px;
 }
 
 #aboutText {
-    width: 50vw;
-    display: block;
-    margin: auto;
-    text-align: left;
+	width: 50vw;
+	display: block;
+	margin: auto;
+	text-align: left;
+}
+
+/* HOBBIES PAGE */
+
+article {
+    width: 614px;
+    height: 614px;
+}
+
+section {
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	border: 0 solid #000;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 0px;
+	position: relative;
+}
+
+.row {
+    background-color: #005555;
+    align-items: stretch;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 50px;
+	padding: 0;
+	padding-top: 0px;
+    padding-bottom: 100px;
+	position: relative;
+    flex-direction: row;
+    overflow: hidden;
+    border: #005555 10px solid;
+}
+
+._1SP8R {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+.j9XKR {
+	padding-top: 30px;
+}
+.AIDOf {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	max-width: 935px;
+}
+
+.M9sTE {
+	max-height: inherit;
+	padding: 0;
+}
+
+.bLWKA {
+	margin-bottom: 24px;
+}
+
+.hobbyPic {
+    height: 614px;
+    width: 614px;
+}
+
+.card-text {
+    font-size: 30px;
+    font-style: italic;
 }
